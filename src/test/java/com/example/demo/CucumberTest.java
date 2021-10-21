@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = {"src/test/java/com/example/demo/feature"},
         extraGlue = "com.example.demo.config",
         plugin = {"pretty",
-                "html:target/cucumber-reports.html"},
+                "html:target/cucumber-reports.html", "json:target/cucumber.json"},
         monochrome = false)
 public class CucumberTest {
 
